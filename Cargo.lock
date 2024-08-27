@@ -3958,8 +3958,9 @@ dependencies = [
 [[package]]
 name = "rspack_sources"
 version = "0.2.17"
-source = "git+https://github.com/SyMind/rspack-sources.git?rev=f5854cc#f5854cce7872e446267211c34bd4fa2bd26ca486"
+source = "git+https://github.com/SyMind/rspack-sources.git?rev=667c99a#667c99a50c4b764806a9b6fdb5bfc2a3404d4809"
 dependencies = [
+ "arrayvec",
  "dashmap 5.5.3",
  "dyn-clone",
  "memchr",
