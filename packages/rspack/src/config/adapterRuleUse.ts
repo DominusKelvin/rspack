@@ -258,7 +258,11 @@ function createRawModuleRuleUsesImpl(
 		if (use.loader.startsWith(BUILTIN_LOADER_PREFIX)) {
 			o = getBuiltinLoaderOptions(use.loader, use.options, options);
 			// keep json with indent so miette can show pretty error
-			o = isNil(o) ? undefined : typeof o === "string" ? o : JSON.stringify(o, null, 2);
+			o = isNil(o)
+				? undefined
+				: typeof o === "string"
+					? o
+					: JSON.stringify(o, null, 2);
 			isBuiltin = true;
 		}
 
